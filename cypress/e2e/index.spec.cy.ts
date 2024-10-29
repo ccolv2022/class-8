@@ -9,15 +9,7 @@ describe('Calculator Tests', () => {
     cy.get('title').should('have.text', 'Calculator App');
   });
 
-});
-
-// ADDITION
-describe('Calculator Tests', () => {
-
-  beforeEach(() => {
-    cy.visit('http://localhost:3000/');
-  });
-
+  // ADDITION
   it('should display 2 when "1 + 1 = " is clicked', () => {
 
     cy.get('.key-1').click();
@@ -26,18 +18,9 @@ describe('Calculator Tests', () => {
     cy.get('.key-equals').click();
 
     cy.get('.calculator-display').should('have.text', '2');
-
   });
 
-});
-
-// SUBTRACTION
-describe('Calculator Tests', () => {
-
-  beforeEach(() => {
-    cy.visit('http://localhost:3000/');
-  });
-
+  // SUBTRACTION
   it('should display 2 when "4 - 2 = " is clicked', () => {
 
     cy.get('.key-4').click();
@@ -46,15 +29,6 @@ describe('Calculator Tests', () => {
     cy.get('.key-equals').click();
 
     cy.get('.calculator-display').should('have.text', '2');
-
-  });
-
-});
-
-describe('Calculator Tests', () => {
-
-  beforeEach(() => {
-    cy.visit('http://localhost:3000/');
   });
 
   it('should display 4 when "4 - 0 = " is clicked', () => {
@@ -65,15 +39,6 @@ describe('Calculator Tests', () => {
     cy.get('.key-equals').click();
 
     cy.get('.calculator-display').should('have.text', '4');
-
-  });
-
-});
-
-describe('Calculator Tests', () => {
-
-  beforeEach(() => {
-    cy.visit('http://localhost:3000/');
   });
 
   it('should display 0 when "4 - 4 = " is clicked', () => {
@@ -87,11 +52,7 @@ describe('Calculator Tests', () => {
 
   });
 
-});
-
-// MULTIPLICATION
-describe('Calculator Tests', () => {
-
+  // MULTIPLICATION
   beforeEach(() => {
     cy.visit('http://localhost:3000/');
   });
@@ -107,14 +68,6 @@ describe('Calculator Tests', () => {
 
   });
 
-});
-
-describe('Calculator Tests', () => {
-
-  beforeEach(() => {
-    cy.visit('http://localhost:3000/');
-  });
-
   it('should display 0 when "2 * 0 = " is clicked', () => {
 
     cy.get('.key-2').click();
@@ -124,14 +77,6 @@ describe('Calculator Tests', () => {
 
     cy.get('.calculator-display').should('have.text', '0');
 
-  });
-
-});
-
-describe('Calculator Tests', () => {
-
-  beforeEach(() => {
-    cy.visit('http://localhost:3000/');
   });
 
   it('should display 1 when "2 * 1 = " is clicked', () => {
@@ -145,15 +90,7 @@ describe('Calculator Tests', () => {
 
   });
 
-});
-
-// DIVISION
-describe('Calculator Tests', () => {
-
-  beforeEach(() => {
-    cy.visit('http://localhost:3000/');
-  });
-
+  // DIVISION
   it('should display 2 when "4 / 2 = " is clicked', () => {
 
     cy.get('.key-4').click();
@@ -164,15 +101,6 @@ describe('Calculator Tests', () => {
     cy.get('.calculator-display').should('have.text', '2');
 
   });
-
-});
-
-describe('Calculator Tests', () => {
-
-  beforeEach(() => {
-    cy.visit('http://localhost:3000/');
-  });
-
   it('should display 1 when "4 / 1 = " is clicked', () => {
 
     cy.get('.key-4').click();
