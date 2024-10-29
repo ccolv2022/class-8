@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 2,
-    "passes": 2,
+    "suites": 10,
+    "tests": 10,
+    "passes": 10,
     "pending": 0,
     "failures": 0,
-    "start": "2024-10-24T23:39:07.974Z",
-    "end": "2024-10-24T23:39:12.591Z",
-    "duration": 4617,
-    "testsRegistered": 2,
+    "start": "2024-10-29T14:31:09.398Z",
+    "end": "2024-10-29T14:31:33.675Z",
+    "duration": 24277,
+    "testsRegistered": 10,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "fb9af138-0a08-4b6c-bf71-a4d9d0aaace9",
+      "uuid": "b3c5beb5-b5d7-461b-a605-4c977bb46226",
       "title": "",
-      "fullFile": "cypress\\e2e\\index.spec.cy.ts",
-      "file": "cypress\\e2e\\index.spec.cy.ts",
+      "fullFile": "cypress/e2e/index.spec.cy.ts",
+      "file": "cypress/e2e/index.spec.cy.ts",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "53a9162b-e1a0-4acb-acd3-e93e8cd35c4a",
+          "uuid": "df3e6d6e-d45c-4e7c-995a-f939240c938f",
           "title": "Calculator Tests",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "should have the title \"Calculator App\"",
               "fullTitle": "Calculator Tests should have the title \"Calculator App\"",
               "timedOut": null,
-              "duration": 526,
+              "duration": 525,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,16 +47,37 @@
               "context": null,
               "code": "cy.get('title').should('have.text', 'Calculator App');",
               "err": {},
-              "uuid": "4acec8eb-4e9f-40a0-aa5e-65c83facc767",
-              "parentUUID": "53a9162b-e1a0-4acb-acd3-e93e8cd35c4a",
+              "uuid": "1c4ac557-9cfb-4b38-8db9-396eeff8ef1d",
+              "parentUUID": "df3e6d6e-d45c-4e7c-995a-f939240c938f",
               "isHook": false,
               "skipped": false
-            },
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1c4ac557-9cfb-4b38-8db9-396eeff8ef1d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 525,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "bd02645e-9bbc-452d-ad87-3f026621a8da",
+          "title": "Calculator Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
             {
               "title": "should display 2 when \"1 + 1 = \" is clicked",
               "fullTitle": "Calculator Tests should display 2 when \"1 + 1 = \" is clicked",
               "timedOut": null,
-              "duration": 2525,
+              "duration": 2553,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +86,332 @@
               "context": null,
               "code": "cy.get('.key-1').click();\ncy.get('.key-add').click();\ncy.get('.key-1').click();\ncy.get('.key-equals').click();\ncy.get('.calculator-display').should('have.text', '2');",
               "err": {},
-              "uuid": "0b2e0af1-9692-49e9-b6de-2583167e434b",
-              "parentUUID": "53a9162b-e1a0-4acb-acd3-e93e8cd35c4a",
+              "uuid": "cd29de72-16e0-49b8-bc09-ed5eab3b8779",
+              "parentUUID": "bd02645e-9bbc-452d-ad87-3f026621a8da",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "4acec8eb-4e9f-40a0-aa5e-65c83facc767",
-            "0b2e0af1-9692-49e9-b6de-2583167e434b"
+            "cd29de72-16e0-49b8-bc09-ed5eab3b8779"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3051,
+          "duration": 2553,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "9859e6d8-1db8-48bd-b0a4-9d5a2e77e9c2",
+          "title": "Calculator Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should display 2 when \"4 - 2 = \" is clicked",
+              "fullTitle": "Calculator Tests should display 2 when \"4 - 2 = \" is clicked",
+              "timedOut": null,
+              "duration": 2550,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.key-4').click();\ncy.get('.key-subtract').click();\ncy.get('.key-2').click();\ncy.get('.key-equals').click();\ncy.get('.calculator-display').should('have.text', '2');",
+              "err": {},
+              "uuid": "4676d1b9-7f34-4824-81f2-f58398956cb4",
+              "parentUUID": "9859e6d8-1db8-48bd-b0a4-9d5a2e77e9c2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4676d1b9-7f34-4824-81f2-f58398956cb4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2550,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "47b71fb8-76a1-4bb4-82af-bd3dc0387935",
+          "title": "Calculator Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should display 4 when \"4 - 0 = \" is clicked",
+              "fullTitle": "Calculator Tests should display 4 when \"4 - 0 = \" is clicked",
+              "timedOut": null,
+              "duration": 2546,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.key-4').click();\ncy.get('.key-subtract').click();\ncy.get('.key-0').click();\ncy.get('.key-equals').click();\ncy.get('.calculator-display').should('have.text', '4');",
+              "err": {},
+              "uuid": "c3880f73-969f-4dae-9883-9ba6360b0bf1",
+              "parentUUID": "47b71fb8-76a1-4bb4-82af-bd3dc0387935",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c3880f73-969f-4dae-9883-9ba6360b0bf1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2546,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "13022683-cd0c-4bce-b977-f110fca0e238",
+          "title": "Calculator Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should display 0 when \"4 - 4 = \" is clicked",
+              "fullTitle": "Calculator Tests should display 0 when \"4 - 4 = \" is clicked",
+              "timedOut": null,
+              "duration": 2548,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.key-4').click();\ncy.get('.key-subtract').click();\ncy.get('.key-4').click();\ncy.get('.key-equals').click();\ncy.get('.calculator-display').should('have.text', '0');",
+              "err": {},
+              "uuid": "13a63cf4-7b7b-46d2-973c-3b99c8935922",
+              "parentUUID": "13022683-cd0c-4bce-b977-f110fca0e238",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "13a63cf4-7b7b-46d2-973c-3b99c8935922"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2548,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "67d4ceb4-abc9-4861-8f4f-0b523d64d67d",
+          "title": "Calculator Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should display 4 when \"2 * 2 = \" is clicked",
+              "fullTitle": "Calculator Tests should display 4 when \"2 * 2 = \" is clicked",
+              "timedOut": null,
+              "duration": 2546,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.key-2').click();\ncy.get('.key-multiply').click();\ncy.get('.key-2').click();\ncy.get('.key-equals').click();\ncy.get('.calculator-display').should('have.text', '4');",
+              "err": {},
+              "uuid": "797549cf-a2d7-4d8c-9ec1-b33aea86913e",
+              "parentUUID": "67d4ceb4-abc9-4861-8f4f-0b523d64d67d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "797549cf-a2d7-4d8c-9ec1-b33aea86913e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2546,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "6c5d4d15-2a64-4bad-8705-d6f8e13471ac",
+          "title": "Calculator Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should display 0 when \"2 * 0 = \" is clicked",
+              "fullTitle": "Calculator Tests should display 0 when \"2 * 0 = \" is clicked",
+              "timedOut": null,
+              "duration": 2539,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.key-2').click();\ncy.get('.key-multiply').click();\ncy.get('.key-0').click();\ncy.get('.key-equals').click();\ncy.get('.calculator-display').should('have.text', '0');",
+              "err": {},
+              "uuid": "5ace0868-8bb6-4983-b6f1-4adb081118c6",
+              "parentUUID": "6c5d4d15-2a64-4bad-8705-d6f8e13471ac",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5ace0868-8bb6-4983-b6f1-4adb081118c6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2539,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "5a2a36e9-e831-45db-995c-a302ded8232a",
+          "title": "Calculator Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should display 1 when \"2 * 1 = \" is clicked",
+              "fullTitle": "Calculator Tests should display 1 when \"2 * 1 = \" is clicked",
+              "timedOut": null,
+              "duration": 2558,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.key-2').click();\ncy.get('.key-multiply').click();\ncy.get('.key-1').click();\ncy.get('.key-equals').click();\ncy.get('.calculator-display').should('have.text', '2');",
+              "err": {},
+              "uuid": "161a6a2b-4ac7-4669-baca-a389984c5ced",
+              "parentUUID": "5a2a36e9-e831-45db-995c-a302ded8232a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "161a6a2b-4ac7-4669-baca-a389984c5ced"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2558,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "f9467a53-f741-4ff6-9abb-c04a65cc9aa5",
+          "title": "Calculator Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should display 2 when \"4 / 2 = \" is clicked",
+              "fullTitle": "Calculator Tests should display 2 when \"4 / 2 = \" is clicked",
+              "timedOut": null,
+              "duration": 2548,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.key-4').click();\ncy.get('.key-divide').click();\ncy.get('.key-2').click();\ncy.get('.key-equals').click();\ncy.get('.calculator-display').should('have.text', '2');",
+              "err": {},
+              "uuid": "53f8782b-b877-4a79-9966-f0be4cfb37f7",
+              "parentUUID": "f9467a53-f741-4ff6-9abb-c04a65cc9aa5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "53f8782b-b877-4a79-9966-f0be4cfb37f7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2548,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "ce844a2a-0ecb-4c1d-872e-860b0eaf3b67",
+          "title": "Calculator Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should display 1 when \"4 / 1 = \" is clicked",
+              "fullTitle": "Calculator Tests should display 1 when \"4 / 1 = \" is clicked",
+              "timedOut": null,
+              "duration": 2548,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.key-4').click();\ncy.get('.key-divide').click();\ncy.get('.key-1').click();\ncy.get('.key-equals').click();\ncy.get('.calculator-display').should('have.text', '4');",
+              "err": {},
+              "uuid": "3aef50a1-d3dc-411d-8790-16ac7621d8b9",
+              "parentUUID": "ce844a2a-0ecb-4c1d-872e-860b0eaf3b67",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3aef50a1-d3dc-411d-8790-16ac7621d8b9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2548,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
